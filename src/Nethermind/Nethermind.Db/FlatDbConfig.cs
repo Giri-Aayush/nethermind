@@ -9,7 +9,7 @@ public class FlatDbConfig : IFlatDbConfig
 {
     public bool Enabled { get; set; } = false;
     public bool EnablePreimageRecording { get; set; } = false;
-    public bool ImportFromPruningTrieState { get; set; } = false;
+    public bool ImportFromPruningTrieState { get; set; } = true;
     public bool InlineCompaction { get; set; } = false;
     public bool VerifyWithTrie { get; set; } = false;
     public FlatLayout Layout { get; set; } = FlatLayout.Flat;
