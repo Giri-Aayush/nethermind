@@ -13,13 +13,13 @@ public interface IFlatDbConfig : IConfig
     [ConfigItem(Description = "Compact size", DefaultValue = "32")]
     int CompactSize { get; set; }
 
-    [ConfigItem(Description = "Enabled", DefaultValue = "false")]
+    [ConfigItem(Description = "Enabled", DefaultValue = "true")]
     bool Enabled { get; set; }
 
     [ConfigItem(Description = "Enable recording of preimages (address/slot hash to original bytes)", DefaultValue = "false")]
     bool EnablePreimageRecording { get; set; }
 
-    [ConfigItem(Description = "Import from pruning trie state db", DefaultValue = "false")]
+    [ConfigItem(Description = "Import from pruning trie state db", DefaultValue = "true")]
     bool ImportFromPruningTrieState { get; set; }
 
     [ConfigItem(Description = "Inline compaction", DefaultValue = "false")]
